@@ -2,8 +2,6 @@ from flask import Flask, render_template
 
 from base import models
 
-from usuarioapppackagegeo import nav
-
 #Configuracion aplicacion
 app = Flask(__name__, template_folder= 'htmls')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:admin@localhost/postgres'
